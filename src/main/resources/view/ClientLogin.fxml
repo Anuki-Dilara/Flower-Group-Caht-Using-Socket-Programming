@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="clientLoginPane" prefHeight="629.0" prefWidth="433.0" style="-fx-background-color: FFEECC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApp.controller.ClientLoginController">
+   <children>
+      <ImageView fitHeight="437.0" fitWidth="433.0" layoutX="-1.0" layoutY="96.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/흰색__꽃__원형_테두리_일러스트_PNG__흰색_데이지_꽃이_원형_테두리_장식_이미지_벡터__PSD_파일_-_Pngtree-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" focusColor="BLACK" layoutX="106.0" layoutY="298.0" onAction="#txtUserNameOnAction" prefHeight="42.0" prefWidth="221.0" promptText="Username">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="146.0" layoutY="573.0" onAction="#btnLoginOnAction" prefHeight="52.0" prefWidth="142.0" style="-fx-background-radius: 20; -fx-background-color: DFA878;" text="Login">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblNameError" layoutX="65.0" layoutY="546.0" prefHeight="17.0" prefWidth="304.0" textAlignment="CENTER" textFill="#f80808" />
+   </children>
+</AnchorPane>

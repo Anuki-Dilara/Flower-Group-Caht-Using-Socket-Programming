@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="serverStartAnchorPane" prefHeight="629.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApp.controller.ServerStartController">
+   <children>
+      <ImageView fitHeight="629.0" fitWidth="433.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgFlower" fitHeight="300.0" fitWidth="252.0" layoutX="88.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Flower.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="145.0" layoutY="516.0" onAction="#btnServerStartOnAction" prefHeight="52.0" prefWidth="142.0" style="-fx-background-radius: 20; -fx-background-color: DFA878;" text="Let's Start">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="101.0" layoutY="48.0" text="Flower Group Chat">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
